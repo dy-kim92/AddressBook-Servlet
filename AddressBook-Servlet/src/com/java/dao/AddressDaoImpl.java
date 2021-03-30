@@ -23,7 +23,7 @@ public class AddressDaoImpl implements AddressDao {
 	//	리스트
 	@Override
 	public List<AddressVo> getList() {
-		List<AddressVo> list = new ArrayList<>();
+		List<AddressVo> addressList = new ArrayList<>();
 		Connection conn = null;
 		Statement stmt = null;
 		ResultSet rs = null;
@@ -42,7 +42,7 @@ public class AddressDaoImpl implements AddressDao {
 				String tel = rs.getString("tel");
 				
 				AddressVo vo = new AddressVo(id, name, phone, tel);
-				list.add(vo);
+				addressList.add(vo);
 			}
 			} catch (SQLException e) {
 				e.printStackTrace();
@@ -55,7 +55,7 @@ public class AddressDaoImpl implements AddressDao {
 					
 				}
 			}
-		return list;
+		return addressList;
 	}
 
 	//	검색
