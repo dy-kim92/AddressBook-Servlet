@@ -35,7 +35,7 @@ public class AddressVo {
 		return phone;
 	}
 
-	public void setPhone(String Phone) {
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 
