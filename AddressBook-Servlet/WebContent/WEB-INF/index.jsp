@@ -24,6 +24,7 @@
 					<th>이름</th><th>휴대전화</th><th>전화번호</th><th>도구</th>
 				</tr>
 			</thead>
+			
 			<tbody>
 				<c:forEach items = "${ addressList }" var="vo" varStatus="status">
 					<tr>
